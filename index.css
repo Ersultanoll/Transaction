@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	font-family: 'Lato';
+	padding-top: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.report {
+	max-width: 400px;
+	width: 100%;
+	margin: auto;
+}
+
+.tracker {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.h2-balance {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+span.count {
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.real-count {
+	display: flex;
+}
+
+:is(.h3-real, .h3-real1) {
+	flex: 1;
+	text-align: center;
+}
+
+:is(.h3-real, .h3-real1) :is(h3, p) {
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+:is(.h3-real p, .h3-real1 p) {
+	line-height: 1.5;
+}
+
+.h3-real p {
+	color: rgb(30, 217, 30);
+}
+
+.h3-real1 p {
+	color: #e33626;
+}
+
+.h3-real {
+	border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.real-count {
+	margin-top: 15px;
+	padding: 15px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+	margin-bottom: 20px;
+}
+
+.history,
+.new-transaction {
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+.history {
+	margin-bottom: 40px;
+}
+
+input {
+	display: block;
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	width: 100%;
+	padding: 10px;
+	margin-block: 10px;
+}
+
+button {
+	display: block;
+	width: 100%;
+	border: none;
+	background-color: #9c88ff;
+	padding: 10px;
+	color: white;
+	text-transform: capitalize;
+	cursor: pointer;
+}
+
+ul{
+	list-style: none;
+}
+
+ul li{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-block: 5px;
+	padding: 5px;
+	font-size: 22px;
+	box-shadow: 0	0	3px rgba(0, 0, 0, 0.34);
+	position: relative;
+}
+
+ul li.minus{
+	border-right: 5px solid rgb(218, 34, 34);
+}
+
+ul li.plus{
+	border-right: 5px solid rgb(44, 234, 44);
+}
+
+ul li {
+	position: relative;
+}
+
+ul li .delete-id{
+	width: max-content;
+	position: absolute;
+	right: -35px;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 4px 8px;
+	color: white;
+	background-color: rgba(239, 14, 14, 0.595);
+}
